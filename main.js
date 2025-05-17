@@ -51,7 +51,7 @@ document.addEventListener('keydown',function(event){
             del();
         }
         else if (tecla == 'Delete'){
-            clean();
+            clean
         }
     } //Fim da função
 )//Fecha o bloco do evento

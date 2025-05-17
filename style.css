@@ -14,16 +14,15 @@ background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(172, 172, 17
     justify-content: center;/*Centraliza o conteudo horizontalmente*/
 }
 .corpoCalc{
-    margin-top: 10px;
-    margin-left: 50px;
-    
+    margin-top: 2%;
+    transform: translate(-50%, -50%);/*Centraliza o conteudo verticalmente*/
     position: absolute;
     background-color: rgba(0,0,0,0.8);/*a transparencia de 0 a 1*/
-    top: 65px;
-    left: 45%;
+    top: 50%;
+    left: 50%;
     /*Ajusta a posição para que fique centralizada ao meio*/
     border-radius: 15px;
-    padding: 20px;
+    padding: 15px;
 }
 .botao{
     width: 50px;
