@@ -1,0 +1,50 @@
+/*Remove as margens e espaçamentos padrão de todos os elemetnos*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.fundo{
+    background: #ffffff;
+background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(172, 172, 176, 1) 12%, rgba(122, 113, 113, 1) 19%, rgba(117, 119, 125, 1) 28%, rgba(22, 42, 71, 1) 40%, rgb(22, 20, 20) 55%);
+    height: 100vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;/*Centraliza o conteudo horizontalmente*/
+}
+.corpoCalc{
+    margin-top: 10px;
+    margin-left: 50px;
+    
+    position: absolute;
+    background-color: rgba(0,0,0,0.8);/*a transparencia de 0 a 1*/
+    top: 65px;
+    left: 45%;
+    /*Ajusta a posição para que fique centralizada ao meio*/
+    border-radius: 15px;
+    padding: 20px;
+}
+.botao{
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    cursor: pointer;/*Indica o elemento indicado quando coloca o mouse encima*/
+    margin: 3px;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    color: white;
+}
+.botao:hover{
+    background-color: black;
+}
+#resultado{
+    background-color: white;
+    width: 207px;
+    height: 30px;
+    margin: 5px;
+    font-size: 25px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}

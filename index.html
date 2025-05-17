@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="fundo">
+        <h1>Calculadora</h1>
+        <div class="corpoCalc">
+             <p id="resultado"></p>
+<!--Tabela para Nºs e operações-->
+<table>
+    <!--Linha 1-->
+    <tr>
+        <!--botãp "C" chama a função para limpar a tela da calculadora-->
+        <td><button class="botao" onclick="clean()"> C </button></td>
+        <!--Botão de voltar ">" Apaga o último dígito (nº)-->
+        <td><button class="botao" onclick="insert('<')"> < </button></td>
+        <!--Botão divisão "/" insere o caractere "/"-->
+        <td><button class="botao" onclick="insert('/')"> / </button></td>
+        <!--Botão divisão "*" insere o caractere "/"-->
+        <td><button class="botao" onclick="insert('*')"> * </button></td>
+        <!--Botão multiplicação "x" multiplica "/"-->
+    </tr>
+    <!--Linha 2-->
+    <tr>
+        <!--botãp "C" chama a função para limpar a tela da calculadora-->
+        <td><button class="botao" onclick="insert('7')"> 7 </button></td>
+        <!--Botão de voltar ">" Apaga o último dígito (nº)-->
+        <td><button class="botao" onclick="insert('8')"> 8 </button></td>
+        <!--Botão divisão "/" insere o caractere "/"-->
+        <td><button class="botao" onclick="insert('9')"> 9 </button></td>
+        <!--Botão divisão "*" insere o caractere "/"-->
+        <td><button class="botao" onclick="insert('-')"> - </button></td>
+        <!--Botão multiplicação "x" multiplica "/"-->
+    </tr>
+     <!--Linha 3-->
+    <tr>
+        <!--botãp "C" chama a função para limpar a tela da calculadora-->
+        <td><button class="botao" onclick="insert('4')"> 4 </button></td>
+        <!--Botão de voltar ">" Apaga o último dígito (nº)-->
+        <td><button class="botao" onclick="insert('5')"> 5 </button></td>
+        <!--Botão divisão "/" insere o caractere "/"-->
+        <td><button class="botao" onclick="insert('6')"> 6 </button></td>
+        <!--Botão divisão "*" insere o caractere "/"-->
+        <td><button class="botao" onclick="insert('+')"> + </button></td>
+        <!--Botão multiplicação "x" multiplica "/"-->
+    </tr>
+    <!--Linha 4-->
+    <tr>
+        <!--botãp "C" chama a função para limpar a tela da calculadora-->
+        <td><button class="botao" onclick="insert('1')"> 1 </button></td>
+        <!--Botão de voltar ">" Apaga o último dígito (nº)-->
+        <td><button class="botao" onclick="insert('2')"> 2 </button></td>
+        <!--Botão divisão "/" insere o caractere "/"-->
+        <td><button class="botao" onclick="insert('3')"> 3 </button></td>
+        <!--Botão divisão "*" insere o caractere "/"-->
+        <td rowspan="2"><button class="botao" style="height: 50px;" onclick="calcular()"> = </button></td>
+        <!--Botão multiplicação "x" multiplica "/"-->
+    </tr>
+     <!--Linha 5-->
+    <tr>
+        <!--botãp "C" chama a função para limpar a tela da calculadora-->
+        <td colspan="2"><button class="botao" style="width: 106px;" onclick=""> 0 </button></td>
+        <!--Botão de voltar ">" Apaga o último dígito (nº)-->
+        <td><button class="botao" onclick=""> . </button></td>
+        <!--Botão divisão "/" insere o caractere "/"-->
+    </tr>
+</table>
+        </div><!--Fim da div corpcalc-->
+    </div><!--Fim da div Fundo-->
+
+    </div>
+</body>
+</html>
